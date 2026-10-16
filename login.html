@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY || ARTWORKS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/login.js" defer></script>
+</head>
+
+<body>
+    <main class="comtainer section">
+        <div class="form-box">
+            <p class="sub-title">ACCOUNT</p>
+            <h1>로그인 / 회원가입</h1>
+            <form action="" id="auth-form">
+                <div class="radio-row">
+                    <label>
+                        <input type="radio" name="mode" value="login" checked />로그인
+                    </label>
+                    <label>
+                        <input type="radio" name="mode" value="signup" />회원가입
+                    </label>
+                </div>
+
+                <label for="email">이메일</label>
+                <input type="email" id="email" required autocomplete="email">
+
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" maxlength="6" required autocomplete="current-password" />
+                <button type="submit">확인</button>
+
+                <p id="message" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

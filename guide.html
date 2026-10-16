@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이용안내 | ART WORKS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="./js/common.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container nav">
+            <a href="index.html" class="logo">ART WORKS</a>
+            <div class="gnb">
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">갤러리</a>
+                <a href="upload.html">작품등록</a>
+                <a href="guide.html" aria-current="page">이용안내</a>
+                <span id="account-nav"><a href="login.html">로그인</a></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container section guide-page">
+        <p class="sub-title">ART WORKS GUIDE</p>
+        <h1>ART WORKS 이용안내</h1>
+        <p class="guide-lead">일상에 예술을 더하는 온라인 작품 갤러리입니다.<br>
+            다양한 작품을 감상하고, 나만의 작품을 직접 등록해 보세요.</p>
+
+        <section class="guide-section" aria-labelledby="browse-title">
+            <p class="sub-title">01 · EXPLORE</p>
+            <h2 id="browse-title">작품 둘러보기</h2>
+            <div class="guide-grid">
+                <div class="guide-card"><strong>01</strong>
+                    <h3>갤러리 방문</h3>
+                    <p>상단의 갤러리 메뉴를 눌러 등록된 작품을 확인하세요.</p>
+                </div>
+                <div class="guide-card"><strong>02</strong>
+                    <h3>작품 검색</h3>
+                    <p>작품명이나 작가명으로 검색하고 카테고리를 선택해 보세요.</p>
+                </div>
+                <div class="guide-card"><strong>03</strong>
+                    <h3>작품 감상</h3>
+                    <p>작품 이미지와 소개, 가격 및 대여료 정보를 살펴보세요.</p>
+                </div>
+            </div>
+            <a class="btn" href="gallery.html">갤러리 바로가기</a>
+        </section>
+
+        <section class="guide-section" aria-labelledby="upload-title">
+            <p class="sub-title">02 · SHARE</p>
+            <h2 id="upload-title">내 작품 등록하기</h2>
+            <div class="guide-grid">
+                <div class="guide-card"><strong>01</strong>
+                    <h3>회원가입 및 로그인</h3>
+                    <p>작품을 등록하려면 먼저 계정으로 로그인해야 합니다.</p>
+                </div>
+                <div class="guide-card"><strong>02</strong>
+                    <h3>작품 정보 입력</h3>
+                    <p>작품명, 작가명, 카테고리, 설명과 가격 정보를 입력하세요.</p>
+                </div>
+                <div class="guide-card"><strong>03</strong>
+                    <h3>사진 업로드</h3>
+                    <p>JPG, PNG, WEBP 이미지 파일(최대 3MB)을 선택하고 등록하세요.</p>
+                </div>
+            </div>
+            <a class="btn" href="upload.html">작품 등록하기</a>
+        </section>
+
+        <section class="guide-section guide-notice" aria-labelledby="notice-title">
+            <p class="sub-title">PLEASE NOTE</p>
+            <h2 id="notice-title">이용 전 확인하세요</h2>
+            <ul>
+                <li>ART WORKS는 JavaScript와 Supabase 학습을 위한 포트폴리오 프로젝트입니다.</li>
+                <li>표시된 구매가와 대여료는 예시 정보이며 실제 결제나 예약은 제공하지 않습니다.</li>
+                <li>본인이 사용 권한을 가진 작품과 이미지만 등록해 주세요.</li>
+                <li>등록한 정보와 이미지는 프로젝트의 데이터베이스 및 저장소에 보관됩니다.</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            ART SPACE · JavaScript + Supabase 학습용 프로젝트 · 실제 결제/예약 서비스가 아닙니다.
+        </div>
+    </footer>
+</body>
+
+</html>

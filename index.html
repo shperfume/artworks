@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTWORKS==일상이 예술이 되다</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/home.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container nav">
+            <a href="index.html" class="logo">ART WORKS</a>
+            <div class="gnb">
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">갤러리</a>
+                <a href="upload.html">작품등록</a>
+                <a href="guide.html">이용안내</a>
+                <span id="account-nav">
+                    <a href="login.html">로그인</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <p class="sub-title">ART FOR EVERY SAPCE</p>
+            <h1>일상에 예술을 더하다</h1>
+            <p>당신의 공간에 어울리는 작품을 만나보세요 <br>구매하거나 대여 신청 할 수 있습니다</p>
+            <a href="gallery.html" class="btn">작품 둘러보기</a>
+        </div>
+    </section>
+    <main class="container section">
+        <p class="sub-title">SURATED SELECTION</p>
+        <h2>새롭게 등록된 작품</h2>
+        <div id="featured" class="grid">작품을 불러오는 중...</div>
+        <div class="more-wrap">
+            <button id="more-btn" type="button" hidden>더보기</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            ART WORKS &middot; jsvascript + supabase 포트폴리오 &middot; 실제 결제/예약 서비스가 아닙니다
+        </div>
+    </footer>
+</body>
+
+</html>

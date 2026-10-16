@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>작품 등록 | ART SPACE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="./js/upload.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container nav">
+            <a href="index.html" class="logo">ART WORKS</a>
+            <div class="gnb">
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">갤러리</a>
+                <a href="upload.html">작품등록</a>
+                <a href="guide.html" aria-current="page">이용안내</a>
+                <span id="account-nav">
+                    <a href="login.html">로그인</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <main class="container section">
+        <div class="form-box">
+            <p class="eyebrow">UPLOAD ARTWORK</p>
+            <h1>작품 등록</h1>
+            <p class="muted">로그인한 회원이 작품과 이미지를 등록하는 학습용 페이지입니다.</p>
+            <!-- 입력한 작품 정보는 DB에, 사진 파일은 Storage에 저장합니다. -->
+            <form id="upload-form">
+                <label for="title">작품명</label>
+                <input id="title" required maxlength="100" />
+                <label for="artist">작가명</label>
+                <input id="artist" required maxlength="100" />
+                <label for="category">카테고리</label>
+                <select id="category">
+                    <option>추상화</option>
+                    <option>인물화</option>
+                    <option>풍경화</option>
+                    <option>일러스트</option>
+                </select>
+                <label for="description">작품 설명</label>
+                <textarea id="description" rows="4"></textarea>
+                <label for="price">구매가 (원)</label>
+                <input id="price" type="number" min="0" required />
+                <label for="rental-price">월 대여료 (원)</label>
+                <input id="rental-price" type="number" min="0" required />
+                <label for="image">작품 사진 (JPG/PNG/WEBP, 최대
+                    3MB)</label><!-- accept는 파일 선택 창의 형식을 제한하지만, JS/서버 검증도 필요합니다. -->
+                <input id="image" type="file" accept="image/jpeg,image/png,image/webp" required />
+                <img id="preview" alt="선택한 이미지 미리보기" hidden />
+                <button type="submit">작품 등록하기</button>
+                <p id="upload-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            ART SPACE · JavaScript + Supabase 학습용 프로젝트 · 실제 결제/예약 서비스가 아닙니다.
+        </div>
+    </footer>
+    <script type="module" src="./js/upload.js"></script>
+</body>
+
+</html>

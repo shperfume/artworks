@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY || ARTWORKS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/gallery.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container nav">
+            <a href="index.html" class="logo">ART WORKS</a>
+            <div class="gnb">
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">갤러리</a>
+                <a href="upload.html">작품등록</a>
+                <a href="guide.html">이용안내</a>
+                <span id="account-nav">
+                    <a href="login.html">로그인</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container section">
+        <p class="sub-title">COLLECTION</p>
+        <h2>작품 갤러리</h2>
+        <p class="intro">공간에 어울리는 작품을 검색해 보세요</p>
+        <div class="toolbar">
+            <input type="search" id="search" placeholder="작품명 또는 작가 검색">
+            <select name="category" id="category">
+                <option>전체</option>
+                <option>추상화</option>
+                <option>풍경화</option>
+                <option>인물화</option>
+                <option>일러스트</option>
+            </select>
+        </div>
+
+        <!-- 검색된 작품 개수 출력 -->
+        <p id="result-count"></p>
+
+        <!-- 작품 카드 출력 -->
+        <div id="art-list" class="grid">불러오는 중....</div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            ART WORKS &middot; jsvascript + supabase 포트폴리오 &middot; 실제 결제/예약 서비스가 아닙니다
+        </div>
+    </footer>
+</body>
+
+</html>
