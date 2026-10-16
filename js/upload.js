@@ -121,7 +121,7 @@ form.addEventListener('submit', async (event) => {
     if (saveError) {
         // DB 저장에 실패했다면 Storage에 올라간 파일을 삭제 시도합니다.
         const { error: removeError } = await supabase.storage
-            .from('artworks_image').remove([path]);
+            .from('artworks_images').remove([path]);
         message.textContent = '작품 등록 실패: ' + saveError.message;
         if (removeError) console.log('이미지 정리 실패:', removeError.message);
         return;

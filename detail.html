@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작품 상세 || ARTWORKS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/detail.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container nav">
+            <a href="index.html" class="logo">ART WORKS</a>
+            <div class="gnb">
+                <a href="index.html">HOME</a>
+                <a href="gallery.html">갤러리</a>
+                <a href="upload.html">작품등록</a>
+                <a href="guide.html">이용안내</a>
+                <span id="account-nav">
+                    <a href="login.html">로그인</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container section">
+        <a href="gallery.html" class="muted">← 갤러리로 돌아가기</a>
+        <p id="detail-message" role="status" aria-live="polite">작품 정보를 불러오는 중...</p>
+
+        <section id="detail-content" class="detail-grid" aria-labelledby="art-title" hidden>
+            <div>
+                <img id="art-image" class="detail-image" alt="" hidden>
+                <div id="image-placeholder" class="no-image">ART WORKS</div>
+            </div>
+            <div>
+                <p id="art-category" class="sub-title"></p>
+                <h1 id="art-title"></h1>
+                <p id="art-artist" class="muted"></p>
+                <p id="art-description" class="detail-description"></p>
+                <div class="order-row">
+                    <strong>구매 가격</strong>
+                    <span id="art-price"></span>
+                </div>
+                <div class="order-row">
+                    <strong>월 대여 가격</strong>
+                    <span id="art-rental-price"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            ART WORKS &middot; jsvascript + supabase 포트폴리오 &middot; 실제 결제/예약 서비스가 아닙니다
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 # 🖌artworks - 일상이 예술이 되다
 
-작품을 **구매하거나 대여신청** 할 수 있는 아트갤러리 웹 서비스입니다.
+작품을 **등록하고 확인** 할 수 있는 아트갤러리 웹 서비스입니다.
 HTML &middot; CSS &middot; Javascript(ES Modules)와 **Supabase**(Auth / Database / Database / Storge)로 만든 학습용 포트폴리오 프로젝트입니다.
 
 ✨ 실제 결제/예약 서비스가 아닙니다
@@ -14,6 +14,7 @@ HTML &middot; CSS &middot; Javascript(ES Modules)와 **Supabase**(Auth / Databas
 | --- | --- | --- | --- |
 | 메인 | 등록된 작품을 9개씩 불러오고 **더보기** 버튼으로 추가 조회 | `index.html`,`Js/home.js` |
 | 갤러리 | 작품명/작가 **검색** + 카테고리 필터, 검색결과 개수 표시 | `gallery.html`,`js/gallery.js` |
+| 작품 상세 | URL의 작품 ID로 작품 정보를 조회해 이미지, 설명, 구매가와 월 대여료 표시 | `detail.html`,`js/detail.js` |
 | 로그인 / 회원가입 | 이메일 + 비밀번호 인증, 로그인 상태에 따라 메뉴 변경 | `login.html`,`js/login.js`,`js/common.js` |
 | 작품등록 | 이미지 미리보기 -> storage 업로드 -> 작품 정보 DB 저장 | `upload.html`,`js/upload.js` |
 
@@ -35,6 +36,7 @@ HTML &middot; CSS &middot; Javascript(ES Modules)와 **Supabase**(Auth / Databas
 artworks/
 ├── index.html        # 메인
 ├── gallery.html      # 작품 갤러리
+├── detail.html       # 작품 상세
 ├── login.html        # 로그인 / 회원가입
 ├── upload.html       # 작품 등록
 ├── css/
@@ -46,6 +48,7 @@ artworks/
     ├── common.js     # Supabase 클라이언트, 로그인 상태, 공통 함수
     ├── home.js
     ├── gallery.js
+    ├── detail.js
     ├── login.js
     ├── upload.js
 ```
@@ -80,6 +83,5 @@ artworks/
 - `Storage` : 로그인 회원만 업로드 /조회는 공개
 
 ### 개선 예정
-- [] 작품 상세 페이지 (`detail.html`)
 - [] 구매/대여 신청 기능 연결
 - [] 내가 등록한 작품 수정/삭제
